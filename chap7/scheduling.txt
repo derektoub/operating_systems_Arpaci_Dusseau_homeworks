@@ -1,0 +1,21 @@
+# I don't see scheduler.py anywhere
+
+1. If the three jobs all have same length 200:
+    a. SJF: turnaround - 200, 400, 600 (average 400)
+            response - 0, 200, 400 (average 200)
+    b. FIFO: same as SJF for jobs of same length arriving at same time
+
+2. Three different job lengths: 100, 200 and 300
+    a. SJF: turnaround - 100, 300, 700 (average 366.67)
+            response - 0, 100, 300 (average 133.33)
+    b. FIFO: It isn't clear what order these jobs arrive in from the question..
+
+3. Another ambiguous question..
+
+4. SJF and FIFO have the same turnaround when the jobs have the same length.
+
+5. SJF has the same response time as RR if the quantum length equals the length of the jobs (which all have the same length)
+
+6. SJF response time increases linearly with job length.
+
+7. Response gets slower as the quantum length increases. Assuming jobs of the same length, and a quantum length equal to the length of the job (L), we get an average response L * (0 + 1 + 2 + 3 + .. N-1) / N = L * ((N-1)(N) / 2) / N = L * (N-1)/2
